@@ -12,6 +12,7 @@ INSERT INTO doctor (cabinet_id, section_id, first_name, last_name, post, salary,
 (7, 4, 'Ірина', 'Ткачук', 'Психотерапевт', 52000.00, '2019-09-01'),
 (8, 4, 'Андрій', 'Бойко', 'Невролог', 42000.00, '2020-02-14');
 
+```sql
 SELECT  
   d.first_name || ' ' || d.last_name AS full_name,
   d.post,
@@ -23,9 +24,10 @@ FROM doctor d
 JOIN cabinet c ON d.cabinet_id = c.cabinet_id
 JOIN section s ON d.section_id = s.section_id
 WHERE s.name = 'Відділення для гострих станів' OR s.name = 'Відділення межових станів';
-
+```
 ![Alt text](lab3bd1.png)
 
+```sql
 UPDATE patient
 SET
   status = 'стабільний', 
@@ -41,9 +43,10 @@ SELECT
 FROM patient p
 JOIN site s ON p.site_id = s.site_id
 WHERE s.number = 201;
-
+```
 ![Alt text](lab3bd2.png)
 
+```sql
 INSERT INTO clinical_protocol (patient_id, doctor_id, start_date, result) VALUES
 (4, 4, '2026-03-12', 'покращення'),
 (5, 5, '2026-03-14', 'без змін'),
@@ -64,5 +67,5 @@ SELECT
   cp.result
 FROM clinical_protocol cp
 JOIN patient p ON p.patient_id = cp.patient_id;
-
+```
 ![Alt text](lab3bd3.png)
