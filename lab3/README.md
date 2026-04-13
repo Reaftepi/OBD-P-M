@@ -3,7 +3,7 @@
 ## Маніпулювання даними SQL (OLTP)
 
 ### SQL-скрипт(и)
-
+```sql
 INSERT INTO doctor (cabinet_id, section_id, first_name, last_name, post, salary, date_of_employment) VALUES  
 (2, 2, 'Євген', 'Трохимович', 'Реабілітолог', 30000.00, '2021-01-12'),
 (3, 2, 'Наталія', 'Довжиченко', 'Санітар', 22000.00, '2020-05-16'),
@@ -12,7 +12,6 @@ INSERT INTO doctor (cabinet_id, section_id, first_name, last_name, post, salary,
 (7, 4, 'Ірина', 'Ткачук', 'Психотерапевт', 52000.00, '2019-09-01'),
 (8, 4, 'Андрій', 'Бойко', 'Невролог', 42000.00, '2020-02-14');
 
-```sql
 SELECT  
   d.first_name || ' ' || d.last_name AS full_name,
   d.post,
