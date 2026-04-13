@@ -41,7 +41,7 @@ HAVING SUM(d.salary) > 50000;
 ```
 ![Alt text](lab4bd4.png)
 
-
+---
 
 ```sql
 -- 2.1) пацієнти та їх опікуни (left)
@@ -67,7 +67,7 @@ FULL JOIN clinical_protocol cp ON p.patient_id = cp.patient_id;
 ```
 ![Alt text](lab4bd7.png)
 
-
+---
 
 ```sql
 -- 3.1) рейтинг успішності лікарів (CTE)
