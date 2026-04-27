@@ -88,55 +88,55 @@ Successfully applied 4 migrations to schema "public", now at version v5
 3. Логіка оновлення даних при зміні схеми (Data Migration) працює без помилок.
 
 ## **5. Скріншоти**
-![Alt text](lab5bd0.png)
+![Alt text](lab6bd0.png)
 
 
-![Alt text](lab5bd1.png)
+![Alt text](lab6bd1.png)
 
 
 Ентіті до:
-![Alt text](lab5bd2.png)
+![Alt text](lab6bd2.png)
 
 
 Ентіті після:
-![Alt text](lab5bd7.png)
+![Alt text](lab6bd7.png)
 
 
 Доктор до:
-![Alt text](lab5bd3.png)
+![Alt text](lab6bd3.png)
 
 
 Пацієнт до:
-![Alt text](lab5bd4.png)
+![Alt text](lab6bd4.png)
 
 
 Діагноз до:
-![Alt text](lab5bd5.png)
+![Alt text](lab6bd5.png)
 
 
 Клінічний протокол до:
-![Alt text](lab5bd6.png)
+![Alt text](lab6bd6.png)
 
 
 Доктор після:
-![Alt text](lab5bd8.png)
+![Alt text](lab6bd8.png)
 
 
 Пацієнт після:
-![Alt text](lab5bd9.png)
+![Alt text](lab6bd9.png)
 
 
 Діагноз після:
-![Alt text](lab5bd10.png)
+![Alt text](lab6bd10.png)
 
 
 Клінічний протокол після:
-![Alt text](lab5bd11.png)
+![Alt text](lab6bd11.png)
 
 
 
-![Alt text](lab5bd12.png)
+![Alt text](lab6bd12.png)
 
 
-![Alt text](lab5bd13.png)
+![Alt text](lab6bd13.png)
 
