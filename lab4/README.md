@@ -7,8 +7,12 @@
 
 ```sql
 -- 1.1) статистика персоналу по відділеннях
-SELECT COUNT(*) AS total_outages
-FROM outage_event;
+SELECT s.name AS section_name, 
+       COUNT(d.doctor_id) AS personal_count, 
+       ROUND(AVG(d.salary), 2) AS avg_salary
+FROM doctor d 
+JOIN section s ON d.section_id = s.section_id
+GROUP BY s.name;
 ```
 ![Alt text](lab4bd1.png)
 ```sql
@@ -101,7 +105,7 @@ WHERE salary > (SELECT AVG(salary) FROM doctor);
 ```sql
 -- 3.3) кількість опікунів для кожного пацієнта (підзапит у SELECT)
 SELECT p.last_name, 
-       (SELECT COUNT(*) FROM trustee t WHERE t.patient_id = p.patient_id) AS trustee_count
+       (SELECT COUNT(*) FROM trustee_patient tp WHERE tp.patient_id = p.patient_id) AS trustee_count
 FROM patient p;
 ```
 ![Alt text](lab4bd10.png)
